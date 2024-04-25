@@ -11,6 +11,7 @@ Route::get('/register', [UserController::class, 'register_index']);
 Route::post('/register', [UserController::class, 'store']);
 Route::get('/login', [UserController::class, 'login_index']);
 Route::post('/login', [UserController::class, 'authentication'])->name('login');
+Route::get('/logout', [UserController::class, 'logout']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [CarController::class, 'all_car_index']);

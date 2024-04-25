@@ -17,11 +17,17 @@ class UserController extends Controller
      */
     public function register_index()
     {
+        if(Auth::check()) {
+            return redirect('/dashboard');
+        }
         return view('register');
     }
 
     public function login_index()
     {
+        if(Auth::check()) {
+            return redirect('/dashboard');
+        }
         return view('login');
     }
 
@@ -40,7 +46,8 @@ class UserController extends Controller
         $validate = $request->validated();
         if (Auth::attempt($validate)) {
             $request->session()->regenerate();
-            session()->flash('currentuser', auth()->user()->name);
+            session()->put('currentuser', auth()->user()->name);
+            session()->flash('message', 'Selamat, anda berhasil masuk!.');
             return redirect()->intended('/dashboard');
         }
 
@@ -98,5 +105,12 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         //
+    }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
     }
 }

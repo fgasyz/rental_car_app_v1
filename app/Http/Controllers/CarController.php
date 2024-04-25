@@ -10,10 +10,10 @@ class CarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function all_car_index()
+    public function all_car_index(Car $car)
     {
         //
-        $cars = Car::get_all_car();
+        $cars = $car::all();
         return view('layouts.dashboard.all-car', ['cars' => $cars]);
     }
 

@@ -9,7 +9,4 @@ class Car extends Model
 {
     use HasFactory;
 
-    static function get_all_car() {
-        return collect(static::all())->toArray();
-    }
 }
