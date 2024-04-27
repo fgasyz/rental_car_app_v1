@@ -6,7 +6,9 @@
                 aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/dashboard">Sewa Mobil</a>
+            <a class="navbar-brand" href="/dashboard">
+                <img src="images/logo.png" alt="#" />
+            </a>
             <a class="navbar-brand hidden" href="./"></a>
         </div>
 

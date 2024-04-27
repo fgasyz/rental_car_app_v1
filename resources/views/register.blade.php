@@ -56,7 +56,7 @@
                 @enderror
             </div>
             <div class="col-12 d-grid mt-4 mb-2">
-                <button type="submit" class="btn btn-success py-2 w-100">Daftar</button>
+                <button type="submit" class="btn py-2 w-100 text-dark" style="background-color: #f6d601;">Daftar</button>
             </div>
             <p class="text-center mb-0 w-100">Sudah punya akun? <a href="/login">Masuk</a></p>
         </form>

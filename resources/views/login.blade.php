@@ -38,7 +38,7 @@
                 @enderror
             </div>
             <div class="col-lg-12 d-grid mt-4 mb-2">
-                <button type="submit" class="btn btn-success py-2 w-100">Masuk</button>
+                <button type="submit" class="btn py-2 w-100 text-dark" style="background-color: #f6d601;">Masuk</button>
             </div>
             <p class="text-center w-100 mb-0">Belum punya akun? <a href="/register">Daftar</a></p>
         </form>

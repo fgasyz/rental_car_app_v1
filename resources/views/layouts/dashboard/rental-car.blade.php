@@ -24,7 +24,7 @@
                                         <div class="dataTables_length" id="bootstrap-data-table-export_length"><label>Show
                                                 <select name="bootstrap-data-table-export_length"
                                                     aria-controls="bootstrap-data-table-export"
-                                                    class="custom-select custom-select-sm form-control form-control-sm">
+                                                    class="custom-select custom-select-sm form-control form-control-sm mt-2">
                                                     <option value="10">10</option>
                                                     <option value="25">25</option>
                                                     <option value="50">50</option>
@@ -33,15 +33,15 @@
                                     </div>
                                     <div class="col-sm-12 col-md-2">
                                         <div id="bootstrap-data-table-export_filter" class="dataTables_filter">
-                                            <label>Search:<input type="search" class="form-control form-control-md"
-                                                    placeholder="" aria-controls="bootstrap-data-table-export"></label>
+                                            <label>Search:<input type="search" class="form-control form-control-lg mt-2"
+                                                    placeholder="" aria-controls="bootstrap-data-table-export" style="height: 35px;"></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <table id="bootstrap-data-table-export"
-                                            class="table table-striped table-bordered dataTable no-footer" role="grid"
+                                            class="table table-striped table-bordered dataTable no-footer table-responsive" role="grid"
                                             aria-describedby="bootstrap-data-table-export_info">
                                             <thead>
                                                 <tr role="row">
@@ -169,7 +169,7 @@
                                                     <td>New York</td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
+                                                    <td>Edinburgh</td>cd
                                                     <td class="sorting_1">$98,540</td>
                                                 </tr>
                                             </tbody>

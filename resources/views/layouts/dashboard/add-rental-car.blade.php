@@ -19,7 +19,7 @@
                     <input type="date" class="form-control" id="inputEndDate" name="tgl_return" @required(true)>
                 </div>
                 <div class="col-12 d-grid my-2">
-                    <button type="submit" class="btn btn-success py-2">Sewa</button>
+                    <button type="submit" class="btn py-2 text-dark" style="background-color: #f6d601;">Sewa</button>
                 </div>
             </form>
         </div>

@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="col-lg-12 d-grid my-2 ">
-                    <button type="submit" class="btn btn-success py-2">Kembalikan</button>
+                    <button type="submit" class="btn py-2 text-dark" style="background-color: #f6d601;">Kembalikan</button>
                 </div>
             </form>
         </div>

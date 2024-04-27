@@ -3,15 +3,12 @@
     <div class="header-menu">
 
         <div class="col-sm-7">
-            <a id="menuToggle" class="menutoggle pull-left bg-success"><i class="fa fa fa-tasks"></i></a>
+            <a id="menuToggle" class="menutoggle pull-left" style="background-color: #f6d601;"><i class="fa fa fa-tasks"></i></a>
         </div>
 
         <div class="col-sm-5">
             <div class="user-area dropdown float-right">
                 <div class="d-flex align-items-center justify-content-end">
-                    <a href="#shopping-cart" class="mr-5 position-relative"><i class="fa fa-shopping-cart text-grey" style="font-size: 20px"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-white bg-warning" style="height: 20px">
-                            99</a>
                     @if (session('currentuser'))
                         <h6 class="mr-2">{{ session('currentuser') ?? 'Guest' }} </h6>
                     @endif

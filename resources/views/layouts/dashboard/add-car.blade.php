@@ -28,7 +28,7 @@
                         name="tarif_rental" @required(true)>
                 </div>
                 <div class="col-12 d-grid my-2">
-                    <button type="submit" class="btn btn-success py-2">Tambah</button>
+                    <button type="submit" class="btn py-2 text-dark" style="background-color: #f6d601;">Tambah</button>
                 </div>
             </form>
         </div>
