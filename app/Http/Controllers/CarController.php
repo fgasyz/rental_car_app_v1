@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateCarRequest;
 use App\Models\Car;
 use Illuminate\Http\Request;
 
@@ -34,9 +35,24 @@ class CarController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CreateCarRequest $request)
     {
         //
+        $validate = $request->validated();
+        
+        $car = new Car();
+
+        $car->no_plat = $validate['no_plat'];
+        $car->merk = $validate['merk'];
+        $car->model = $validate['model'];
+        $car->image = 'images/car.png';
+        $car->tarif_rental = $validate['tarif_rental'];
+        $car->status = 0;
+
+
+        $car->save();
+
+        return redirect('/dashboard/addcar');
     }
 
     /**

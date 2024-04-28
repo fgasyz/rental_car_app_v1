@@ -86,7 +86,7 @@
                                                     <td class="">Jennifer Acosta</td>
                                                     <td>Junior Javascript Developer</td>
                                                     <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$75,650</td>
@@ -95,7 +95,7 @@
                                                     <td class="">Doris Wilder</td>
                                                     <td>Sales Assistant</td>
                                                     <td>Sidney</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$85,600</td>
@@ -104,7 +104,7 @@
                                                     <td class="">Unity Butler</td>
                                                     <td>Marketing Designer</td>
                                                     <td>San Francisco</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$85,675</td>
@@ -113,7 +113,7 @@
                                                     <td class="">Ashton Cox</td>
                                                     <td>Junior Technical Author</td>
                                                     <td>San Francisco</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$86,000</td>
@@ -122,7 +122,7 @@
                                                     <td class="">Jonas Alexander</td>
                                                     <td>Developer</td>
                                                     <td>San Francisco</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$86,500</td>
@@ -131,7 +131,7 @@
                                                     <td class="">Finn Camacho</td>
                                                     <td>Support Engineer</td>
                                                     <td>San Francisco</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$87,500</td>
@@ -140,7 +140,7 @@
                                                     <td class="">Jena Gaines</td>
                                                     <td>Office Manager</td>
                                                     <td>London</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$90,560</td>
@@ -149,7 +149,7 @@
                                                     <td class="">Gavin Joyce</td>
                                                     <td>Developer</td>
                                                     <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$92,575</td>
@@ -158,7 +158,7 @@
                                                     <td class="">Michelle House</td>
                                                     <td>Integration Specialist</td>
                                                     <td>Sidney</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
                                                     <td class="sorting_1">$95,400</td>
@@ -167,7 +167,7 @@
                                                     <td class="">Thor Walton</td>
                                                     <td>Developer</td>
                                                     <td>New York</td>
-                                                    <td>Edinburgh</td>
+                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>cd
                                                     <td class="sorting_1">$98,540</td>
