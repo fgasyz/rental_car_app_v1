@@ -65,7 +65,12 @@
                                  <a class="nav-link" href="#">Hubungi Kami</a>
                               </li>
                            </ul>
+                           @if (Auth::check())
+                           <div class="sign_btn"><a href="/login"> Halo, {{ session('currentuser') }}</a></div>
+                           @endif
+                           @guest                               
                            <div class="sign_btn"><a href="/login">Masuk</a></div>
+                           @endguest
                         </div>
                      </nav>
                   </div>

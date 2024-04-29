@@ -51,7 +51,7 @@ class CarController extends Controller
 
 
         $car->save();
-
+        session()->flash('add-car-message', 'Data mobil berhasil ditambahkan!');
         return redirect('/dashboard/addcar');
     }
 

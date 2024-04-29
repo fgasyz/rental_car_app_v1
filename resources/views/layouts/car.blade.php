@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="d-flex w-100">
-            <a href="#" class=" btn d-block w-100"><button class="btn w-100 text-dark" style="background-color: #f6d601;">Sewa</button></a>
+            <a href="dashboard/addrentalcar" class=" btn d-block w-100"><button class="btn w-100 text-dark" style="background-color: #f6d601;">Sewa</button></a>
         </div>
     </div>
 </div>
