@@ -11,7 +11,7 @@ class CreateRentalCarRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -26,6 +26,20 @@ class CreateRentalCarRequest extends FormRequest
             'no_plat' => ['required'],
             'tgl_rental' => ['required'],
             'tgl_return' => ['required']
+        ];
+    }
+
+        /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array<string, string>
+     */
+    public function messages(): array
+    {
+        return [
+            'no_plat.required' => 'masukkan no plat!',
+            'tgl_rental.required' => 'masukkan tanggal sewa!',
+            'tgl_return.required' => 'masukkan tanggal kembali!',
         ];
     }
 }

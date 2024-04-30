@@ -13,8 +13,9 @@
                     </button>
             </div>
         @endsession
-
-        @yield('dashboard-content-item', 'tidak ada konten')
+<div class="d-flex flex-wrap justify-content-center">
+    @yield('dashboard-content-item', 'tidak ada konten')
+</div>
 
     </div>
 </div>

@@ -23,7 +23,7 @@ class CarFactory extends Factory
             'model' => fake()->word(),
             'image' => 'images/car.png',
             'tarif_rental' => '250000',
-            'status' => false
+            'status' => true
         ];
     }
 }

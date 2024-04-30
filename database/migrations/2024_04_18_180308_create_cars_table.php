@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('model');
             $table->string('image');
             $table->string('tarif_rental');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

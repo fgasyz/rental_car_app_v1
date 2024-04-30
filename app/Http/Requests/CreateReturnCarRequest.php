@@ -11,7 +11,7 @@ class CreateReturnCarRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,6 +24,18 @@ class CreateReturnCarRequest extends FormRequest
         return [
             //
             'no_plat' => ['required'],
+        ];
+    }
+
+            /**
+     * Get the error messages for the defined validation rules.
+     *
+     * @return array<string, string>
+     */
+    public function messages(): array
+    {
+        return [
+            'no_plat.required' => 'masukkan no plat!',
         ];
     }
 }

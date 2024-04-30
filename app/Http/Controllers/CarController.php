@@ -14,7 +14,7 @@ class CarController extends Controller
     public function all_car_index(Car $car)
     {
         //
-        $cars = $car::all();
+        $cars = $car::where('status', 1)->get();
         return view('layouts.dashboard.all-car', ['cars' => $cars]);
     }
 
@@ -30,6 +30,7 @@ class CarController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -47,7 +48,7 @@ class CarController extends Controller
         $car->model = $validate['model'];
         $car->image = 'images/car.png';
         $car->tarif_rental = $validate['tarif_rental'];
-        $car->status = 0;
+        $car->status = 1;
 
 
         $car->save();
@@ -61,6 +62,8 @@ class CarController extends Controller
     public function show(Car $car)
     {
         //
+
+
     }
 
     /**

@@ -18,7 +18,7 @@
                     </a </div>
 
                     <div class="user-menu dropdown-menu">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i> Profil Saya</a>
+                        <a class="nav-link" href="/dashboard/users/{{ session('no_sim') }}/profile"><i class="fa fa-user"></i> Profil Saya</a>
                         <a class="nav-link" href="/logout"><i class="fa fa-power-off"></i> Keluar</a>
                     </div>
                 </div>

@@ -9,4 +9,7 @@ class Car extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'status'
+    ];
 }

@@ -17,7 +17,7 @@ class UserController extends Controller
      */
     public function register_index()
     {
-        if(Auth::check()) {
+        if (Auth::check()) {
             return redirect('/dashboard');
         }
         return view('register');
@@ -25,10 +25,20 @@ class UserController extends Controller
 
     public function login_index()
     {
-        if(Auth::check()) {
+        if (Auth::check()) {
             return redirect('/dashboard');
         }
         return view('login');
+    }
+
+    public function profile_index(User $users)
+    {
+        if (Auth::check()) {
+            $usersession = session()->get('no_sim');
+            $user = $users::where('no_sim', $usersession)->first();
+            return view('layouts.dashboard.user-profile', ['user' => $user]);
+        }
+        return redirect()->route('login');
     }
 
     /**
@@ -46,6 +56,7 @@ class UserController extends Controller
         $validate = $request->validated();
         if (Auth::attempt($validate)) {
             $request->session()->regenerate();
+            session()->put('no_sim', auth()->user()->no_sim);
             session()->put('currentuser', auth()->user()->name);
             session()->flash('message', 'Selamat, anda berhasil masuk!.');
             return redirect()->intended('/dashboard');
@@ -107,7 +118,8 @@ class UserController extends Controller
         //
     }
 
-    public function logout(Request $request) {
+    public function logout(Request $request)
+    {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

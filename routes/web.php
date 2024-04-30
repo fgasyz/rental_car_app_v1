@@ -17,7 +17,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [CarController::class, 'all_car_index']);
     Route::get('/dashboard/addcar', [CarController::class, 'add_car_index']);
     Route::post('/dashboard/addcar', [CarController::class, 'store']);
-    Route::get('/dashboard/addrentalcar', [RentalCarController::class, 'add_rental_car_index']);
+    Route::get('/dashboard/addrentalcar/{no_plat?}', [RentalCarController::class, 'add_rental_car_index']);
+    Route::post('/dashboard/addrentalcar/{no_plat?}', [RentalCarController::class, 'store']);
     Route::get('/dashboard/rentalcar', [RentalCarController::class, 'rental_car_index']);
     Route::get('/dashboard/returncar', [ReturnCarController::class, 'return_car_index']);
+    Route::post('/dashboard/returncar', [ReturnCarController::class, 'store']);
+    Route::get('/dashboard/users/{no_sim}/profile', [UserController::class, 'profile_index']);
 });

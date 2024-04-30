@@ -1,13 +1,5 @@
 @extends('layouts.dashboard.app')
 
-{{-- <th scope="col">No.Plat</th>
-<th scope="col">Merk</th>
-<th scope="col">Model</th>
-<th scope="col">Gambar</th>
-<th scope="col">Tanggal Mulai Sewa</th>
-<th scope="col">Tanggal Akhir Sewa</th>
-<th scope="col">Total Tarif</th> --}}
-
 @section('dashboard-content-item')
     <div class="col-lg-12">
         <div class="animated fadeIn">
@@ -19,24 +11,10 @@
                         </div>
                         <div class="card-body">
                             <div id="bootstrap-data-table-export_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-10">
-                                        <div class="dataTables_length" id="bootstrap-data-table-export_length"><label>Show
-                                                <select name="bootstrap-data-table-export_length"
-                                                    aria-controls="bootstrap-data-table-export"
-                                                    class="custom-select custom-select-sm form-control form-control-sm mt-2">
-                                                    <option value="10">10</option>
-                                                    <option value="25">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="-1">All</option>
-                                                </select> entries</label></div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-2">
-                                        <div id="bootstrap-data-table-export_filter" class="dataTables_filter">
-                                            <label>Search:<input type="search" class="form-control form-control-lg mt-2"
-                                                    placeholder="" aria-controls="bootstrap-data-table-export" style="height: 35px;"></label>
-                                        </div>
-                                    </div>
+
+                                <div id="bootstrap-data-table-export_filter" class="dataTables_filter">
+                                    <label>Cari:<input type="search" class="form-control form-control-lg mt-2"
+                                            placeholder="" aria-controls="bootstrap-data-table-export" style="height: 35px;"></label>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -169,7 +147,7 @@
                                                     <td>New York</td>
                                                     <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
                                                     <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>cd
+                                                    <td>Edinburgh</td>
                                                     <td class="sorting_1">$98,540</td>
                                                 </tr>
                                             </tbody>
@@ -179,16 +157,16 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-md-9">
                                         <div class="dataTables_info me-auto" id="bootstrap-data-table-export_info" role="status"
-                                            aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                            aria-live="polite">1 - 10 dari 57 total data</div>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
                                         <div class="dataTables_paginate paging_simple_numbers"
                                             id="bootstrap-data-table-export_paginate">
-                                            <ul class="pagination">
+                                            <ul class="pagination justify-content-end">
                                                 <li class="paginate_button page-item previous disabled"
                                                     id="bootstrap-data-table-export_previous"><a href="#"
                                                         aria-controls="bootstrap-data-table-export" data-dt-idx="0"
-                                                        tabindex="0" class="page-link">Previous</a></li>
+                                                        tabindex="0" class="page-link">Sebelumnya</a></li>
                                                 <li class="paginate_button page-item active"><a href="#"
                                                         aria-controls="bootstrap-data-table-export" data-dt-idx="1"
                                                         tabindex="0" class="page-link">1</a></li>
@@ -198,19 +176,10 @@
                                                 <li class="paginate_button page-item "><a href="#"
                                                         aria-controls="bootstrap-data-table-export" data-dt-idx="3"
                                                         tabindex="0" class="page-link">3</a></li>
-                                                <li class="paginate_button page-item "><a href="#"
-                                                        aria-controls="bootstrap-data-table-export" data-dt-idx="4"
-                                                        tabindex="0" class="page-link">4</a></li>
-                                                <li class="paginate_button page-item "><a href="#"
-                                                        aria-controls="bootstrap-data-table-export" data-dt-idx="5"
-                                                        tabindex="0" class="page-link">5</a></li>
-                                                <li class="paginate_button page-item "><a href="#"
-                                                        aria-controls="bootstrap-data-table-export" data-dt-idx="6"
-                                                        tabindex="0" class="page-link">6</a></li>
                                                 <li class="paginate_button page-item next"
                                                     id="bootstrap-data-table-export_next"><a href="#"
                                                         aria-controls="bootstrap-data-table-export" data-dt-idx="7"
-                                                        tabindex="0" class="page-link">Next</a></li>
+                                                        tabindex="0" class="page-link">Selanjutnya</a></li>
                                             </ul>
                                         </div>
                                     </div>
