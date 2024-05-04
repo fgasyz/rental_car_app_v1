@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('no_sim')->unique();
             $table->string('name');
             $table->string('password');
+            $table->enum('user_type', ['admin', 'customer']);
             $table->text('address');
             $table->string('no_telp');
             $table->rememberToken();

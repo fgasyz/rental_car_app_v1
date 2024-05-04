@@ -27,6 +27,7 @@ class RentalCarFactory extends Factory
             "no_plat" => $car->no_plat,
             "tgl_rental" => fake()->dateTime(),
             "tgl_return" => fake()->dateTime(),
+            "total_tarif_rental" => "250000"
         ];
     }
 }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('no_plat');
             $table->dateTime('tgl_rental', precision: 0);
             $table->dateTime('tgl_return', precision: 0);
+            $table->bigInteger('total_tarif_rental');
         });
 
         Schema::table('rental_cars', function (Blueprint $table) {

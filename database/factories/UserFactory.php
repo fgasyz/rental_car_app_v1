@@ -26,6 +26,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'no_sim' => fake()->uuid(),
+            'user_type' => 'customer',
             'password' => static::$password ??= Hash::make('password'),
             'no_telp' => fake()->e164PhoneNumber(),
             'address' => fake()->paragraph(2),

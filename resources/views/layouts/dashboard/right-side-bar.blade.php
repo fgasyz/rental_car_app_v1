@@ -2,7 +2,7 @@
 
     @include('layouts.dashboard.navbar')
 
-    <div class="content mt-3">
+    <div class="content my-3">
 
         @session('message')
             <div class="sufee-alert alert with-close alert-success alert-dismissible fade show mx-3">

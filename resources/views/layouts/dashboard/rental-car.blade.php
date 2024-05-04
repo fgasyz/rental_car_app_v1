@@ -60,96 +60,17 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr role="row" class="odd">
-                                                    <td class="">Jennifer Acosta</td>
-                                                    <td>Junior Javascript Developer</td>
-                                                    <td>Edinburgh</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$75,650</td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="">Doris Wilder</td>
-                                                    <td>Sales Assistant</td>
-                                                    <td>Sidney</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$85,600</td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="">Unity Butler</td>
-                                                    <td>Marketing Designer</td>
-                                                    <td>San Francisco</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$85,675</td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="">Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$86,000</td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="">Jonas Alexander</td>
-                                                    <td>Developer</td>
-                                                    <td>San Francisco</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$86,500</td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="">Finn Camacho</td>
-                                                    <td>Support Engineer</td>
-                                                    <td>San Francisco</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$87,500</td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="">Jena Gaines</td>
-                                                    <td>Office Manager</td>
-                                                    <td>London</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$90,560</td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="">Gavin Joyce</td>
-                                                    <td>Developer</td>
-                                                    <td>Edinburgh</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$92,575</td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="">Michelle House</td>
-                                                    <td>Integration Specialist</td>
-                                                    <td>Sidney</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$95,400</td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="">Thor Walton</td>
-                                                    <td>Developer</td>
-                                                    <td>New York</td>
-                                                    <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td class="sorting_1">$98,540</td>
-                                                </tr>
+                                                @foreach ($allrentalcar as $item)
+                                                    <tr role="row" class="odd">
+                                                        <td class="">{{ $item->no_plat }}</td>
+                                                        <td>{{ $item->merk }}</td>
+                                                        <td>{{ $item->model }}</td>
+                                                        <td><img src="{{ asset('images/car.png') }}" alt="" height="50"></td>
+                                                        <td>{{ \Carbon\Carbon::parse($item->tgl_rental)->toDateString() }}</td>
+                                                        <td>{{ \Carbon\Carbon::parse($item->tgl_return)->toDateString() }}</td>
+                                                        <td class="sorting_1">Rp. {{ number_format($item->total_tarif_rental) }}</td>
+                                                    </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

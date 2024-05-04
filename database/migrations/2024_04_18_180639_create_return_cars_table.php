@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('no_sim');
             $table->string('no_plat');
-            $table->bigInteger('total_tarif_rental');
     });
 
     Schema::table('return_cars', function (Blueprint $table) {

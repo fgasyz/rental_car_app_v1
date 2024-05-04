@@ -25,7 +25,6 @@ class ReturnCarFactory extends Factory
             //
             "no_sim" => $user->no_sim,
             "no_plat" => $car->no_plat,
-            "total_tarif_rental" => "250000"
         ];
     }
 }
