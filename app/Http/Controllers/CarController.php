@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CreateCarRequest;
 use App\Models\Car;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Gate;
+use App\Http\Requests\CreateCarRequest;
+use App\Models\User;
 
 class CarController extends Controller
 {
@@ -20,7 +23,9 @@ class CarController extends Controller
 
     public function add_car_index()
     {
-        //
+        if(!Gate::allows('add-car')) {
+            abort(403);
+        }
         return view('layouts.dashboard.add-car');
     }
 

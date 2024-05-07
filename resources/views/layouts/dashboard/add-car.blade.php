@@ -1,11 +1,10 @@
 @extends('layouts.dashboard.app')
-
 @section('dashboard-content-item')
     <div class="col-lg-12 align-items-center justify-content-center ">
-        @if(session('add-car-message'))
-        <div class="alert alert-success" role="alert">
-            {{ session('add-car-message') }}
-        </div>
+        @if (session('add-car-message'))
+            <div class="alert alert-success" role="alert">
+                {{ session('add-car-message') }}
+            </div>
         @endif
         <div class="card px-5 pt-2 pb-4">
             <h4 class="text-center my-4">Masukkan data mobil</h4>
@@ -45,7 +44,8 @@
                 <div class="col-12 mb-2">
                     <label for="inputTarifRental" class="form-label">Tarif Sewa / hari :</label>
                     <input type="input" class="form-control @error('tarif_rental') is-invalid @enderror"
-                        id="inputTarifRental" placeholder="Rp. 250.000,-" name="tarif_rental" value="{{ old('tarif_sewa') }}" required>
+                        id="inputTarifRental" placeholder="Rp. 250.000,-" name="tarif_rental"
+                        value="{{ old('tarif_sewa') }}" required>
                     @error('tarif_rental')
                         <div class="invalid-feedback">
                             {{ $message }}

@@ -24,7 +24,7 @@ class RentalCarController extends Controller
     {
         //
         $session = session()->get('no_sim');
-        $allrentalcar = $cars->join('rental_cars', 'cars.no_plat', '=', 'rental_cars.no_plat')->where('no_sim', '=', $session)->get();
+        $allrentalcar = $cars->join('rental_cars', 'cars.no_plat', '=', 'rental_cars.no_plat')->where('no_sim', '=', $session)->paginate(5);
         return view('layouts.dashboard.rental-car', compact('allrentalcar'));
     }
     /**
