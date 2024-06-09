@@ -1,8 +1,18 @@
-# Rento
+# Rento-web-app 
 
-Sistem informasi rental mobil berbasis web
+Sistem informasi sewa mobil
 
-## Screenshoot :
+### Fitur :
+- Otentikasi 
+- Authorisasi
+- Manajemen User
+- Manajemen sewa mobil
+- Manajemen Pengembalian Mobil
 
-<img src="https://github.com/fgasyz/rental_car_app_v1/blob/master/Screenshot%202024-04-27%20111222.png"/>
-<img src="https://github.com/fgasyz/rental_car_app_v1/blob/master/Screenshot%202024-04-27%20110824.png"/>
+### Screenshoot :
+<div> 
+<img src="https://github.com/fgasyz/rento-web-app/blob/master/Screenshot%202024-06-10%20024854.png" />
+<img src="https://github.com/fgasyz/rento-web-app/blob/master/Screenshot%202024-06-10%20030907.png" />
+<img src="https://github.com/fgasyz/rento-web-app/blob/master/Screenshot%202024-06-10%20030956.png" />
+<img src="https://github.com/fgasyz/rento-web-app/blob/master/Screenshot%202024-06-10%20031017.png" />
+</div>
